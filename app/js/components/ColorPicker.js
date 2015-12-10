@@ -38,8 +38,8 @@ class ColorPicker extends React.Component{
   }
 
   handleChange(event) {
-    alert(this.props.name + event.target.name + this.props.tururu);
-    //this.props.onUserInput(this.props.name,event.target.name,event.target.value);
+    //this.props.onUserInput('a','b','c')
+    this.props.onUserInput(this.props.name,event.target.name,event.target.value);
     //event.target.value
     //switch (event.target.name){
     //  case 'red':
