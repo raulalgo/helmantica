@@ -36,7 +36,7 @@ class HomePage extends React.Component {
         <section className="home-page cls">
             <ColorPicker name="uno" r={this.state.r1} g={this.state.g1} b={this.state.b1} onUserInput={this.handleChange} />
             <ColorPicker name="dos" r={this.state.r2} g={this.state.g2} b={this.state.b2} onUserInput={this.handleChange} />
-            <ColorScale />
+            <ColorScale r1={this.state.r1} g1={this.state.g1} b1={this.state.b1} r2={this.state.r2} g2={this.state.g2} b2={this.state.b2} />
         </section>
       </DocumentTitle>
     );
