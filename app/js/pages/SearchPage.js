@@ -34,7 +34,7 @@ class SearchPage extends React.Component {
           <div>
             <h1>Search</h1>
 
-            <h2>Your query: <span ref="queryDisplay">{this.state.query}</span></h2>
+            <h2>Your consulta: <span ref="queryDisplay">{this.state.query}</span></h2>
 
             <input type="text" onChange={this.handleQueryChange} ref="searchInput" />
           </div>

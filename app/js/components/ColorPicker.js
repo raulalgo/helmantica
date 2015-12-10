@@ -29,33 +29,35 @@ class ColorPicker extends React.Component{
     //this.state.color = defaultColor;
     return (
         <div id="colorPicker" className="left mr"> 
-          <ColorDisplay ref="displayer" bgRed={this.state.r} bgGreen={this.state.g} bgBlue={this.state.b} />
-          R:<br /><input type="range" name="red" min="0" max="255" step="1" defaultValue={this.state.r} onChange={this.handleChange} /> {this.state.r}<br />
-          G:<br /><input type="range" name="green" min="0" max="255" step="1" defaultValue={this.state.g} onChange={this.handleChange} /> {this.state.g}<br />
-          B:<br /><input type="range" name="blue" min="0" max="255" step="1" defaultValue={this.state.b} onChange={this.handleChange} /> {this.state.b}
+          <ColorDisplay ref="displayer" bgRed={this.props.r} bgGreen={this.props.g} bgBlue={this.props.b} />
+          R:<br /><input type="range" name="red" min="0" max="255" step="1" defaultValue={this.props.r} onChange={this.handleChange} /> {this.props.r}<br />
+          G:<br /><input type="range" name="green" min="0" max="255" step="1" defaultValue={this.props.g} onChange={this.handleChange} /> {this.props.g}<br />
+          B:<br /><input type="range" name="blue" min="0" max="255" step="1" defaultValue={this.props.b} onChange={this.handleChange} /> {this.props.b}
         </div>
     );
   }
 
   handleChange(event) {
+    alert(this.props.name + event.target.name + this.props.tururu);
+    //this.props.onUserInput(this.props.name,event.target.name,event.target.value);
     //event.target.value
-    switch (event.target.name){
-      case 'red':
-        this.setState({
-          r: event.target.value
-        });
-      break;
-      case 'green':
-        this.setState({
-          g: event.target.value
-        });
-      break;
-      case 'blue':
-        this.setState({
-          b: event.target.value
-        });
-      break;
-    }
+    //switch (event.target.name){
+    //  case 'red':
+    //    //this.setState({
+    //    //  r: event.target.value
+    //    //});
+    //  break;
+    //  case 'green':
+    //    this.setState({
+    //      g: event.target.value
+    //    });
+    //  break;
+    //  case 'blue':
+    //    this.setState({
+    //      b: event.target.value
+    //    });
+    //  break;
+    //}
   }
 }
 
