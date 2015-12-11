@@ -26,7 +26,6 @@ class ColorPicker extends React.Component{
       greenChannel: 0,
       blueChannel: 150
     };
-    //this.state.color = defaultColor;
     return (
         <div id="colorPicker" className="left mr"> 
           <ColorDisplay ref="displayer" bgRed={this.props.r} bgGreen={this.props.g} bgBlue={this.props.b} />
@@ -38,26 +37,7 @@ class ColorPicker extends React.Component{
   }
 
   handleChange(event) {
-    //this.props.onUserInput('a','b','c')
     this.props.onUserInput(this.props.name,event.target.name,event.target.value);
-    //event.target.value
-    //switch (event.target.name){
-    //  case 'red':
-    //    //this.setState({
-    //    //  r: event.target.value
-    //    //});
-    //  break;
-    //  case 'green':
-    //    this.setState({
-    //      g: event.target.value
-    //    });
-    //  break;
-    //  case 'blue':
-    //    this.setState({
-    //      b: event.target.value
-    //    });
-    //  break;
-    //}
   }
 }
 

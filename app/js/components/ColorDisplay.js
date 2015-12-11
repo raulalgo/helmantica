@@ -26,7 +26,7 @@ class ColorDisplay extends React.Component{
     
     divStyle.backgroundColor = "rgb(" + this.props.bgRed + "," + this.props.bgGreen + "," + this.props.bgBlue +  ")" ;
     return (
-      <div id="colorDisplay" style={divStyle} ></div>
+      <div id="colorDisplay" style={divStyle} >{this.props.bgRed},{this.props.bgGreen},{this.props.bgBlue}</div>
     );
   }
 
