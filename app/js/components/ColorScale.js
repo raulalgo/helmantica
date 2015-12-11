@@ -38,7 +38,6 @@ class ColorScale extends React.Component{
       g: this.props.g1,
       b: this.props.b1
     }
-    //alert('initialColor. r: ' + this.props.r1)
     var finalColor = {
       r: this.props.r2,
       g: this.props.g2,

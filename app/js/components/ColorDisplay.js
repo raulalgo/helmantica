@@ -6,9 +6,10 @@ import React from 'react';
 
 var divStyle = {
   backgroundColor: 'rgb(255,255,0)',
-  minWidth: '250px',
-  width: '250px',
-  minHeight: '100px'
+  minWidth: '75px',
+  width: '75px',
+  minHeight: '100px',
+  fontSize: '12px'
 }
 
 class ColorDisplay extends React.Component{
