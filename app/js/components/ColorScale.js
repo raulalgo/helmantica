@@ -22,7 +22,7 @@ class ColorScale extends React.Component{
     super(props);
     this.handleChange = this.handleChange.bind(this);
     this.colorScaler = this.colorScaler.bind(this);
-    this.steps=4;
+    this.steps=9;
   }
 
   componentWillMount () {
@@ -54,7 +54,7 @@ class ColorScale extends React.Component{
       b: this.props.b2
     }
     this.colorScaler(initialColor,finalColor);
-    this.colorArray = this.colorArrayScaler(initialColor,finalColor, 4);
+    this.colorArray = this.colorArrayScaler(initialColor,finalColor, this.steps);
   }
 
   render() {
@@ -70,11 +70,16 @@ class ColorScale extends React.Component{
           <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[1].r} bgGreen={this.colorArray[1].g} bgBlue={this.colorArray[1].b} /></div>
           <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[2].r} bgGreen={this.colorArray[2].g} bgBlue={this.colorArray[2].b} /></div>
           <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[3].r} bgGreen={this.colorArray[3].g} bgBlue={this.colorArray[3].b} /></div>
+          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[4].r} bgGreen={this.colorArray[4].g} bgBlue={this.colorArray[4].b} /></div>
+          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[5].r} bgGreen={this.colorArray[5].g} bgBlue={this.colorArray[5].b} /></div>
+          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[6].r} bgGreen={this.colorArray[6].g} bgBlue={this.colorArray[6].b} /></div>
+          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[7].r} bgGreen={this.colorArray[7].g} bgBlue={this.colorArray[7].b} /></div>
+          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[8].r} bgGreen={this.colorArray[8].g} bgBlue={this.colorArray[8].b} /></div>
           <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.props.r2} bgGreen={this.props.g2} bgBlue={this.props.b2} /></div>
         </div>
 
         <div className="cls mr">
-          {this.componentsArray}
+          {this.componentArray}
         </div>
       </div>
     );
