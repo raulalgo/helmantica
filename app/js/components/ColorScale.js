@@ -9,12 +9,20 @@ class ColorScale extends React.Component{
   greenScale;
   blueScale;
   increment;
+  steps;
+
+  redArray;
+  greenArray;
+  blueArray;
+  colorArray;
+  componentsArray;
 
   constructor(props) {
 
     super(props);
     this.handleChange = this.handleChange.bind(this);
     this.colorScaler = this.colorScaler.bind(this);
+    this.steps=4;
   }
 
   componentWillMount () {
@@ -29,6 +37,8 @@ class ColorScale extends React.Component{
       b: this.props.b2
     }
     this.colorScaler(color1,color2);
+    this.colorArray = this.colorArrayScaler(color1,color2, this.steps);
+    this.scaleBuilder();
 
   }
 
@@ -44,6 +54,7 @@ class ColorScale extends React.Component{
       b: this.props.b2
     }
     this.colorScaler(initialColor,finalColor);
+    this.colorArray = this.colorArrayScaler(initialColor,finalColor, 4);
   }
 
   render() {
@@ -53,14 +64,19 @@ class ColorScale extends React.Component{
       blueChannel: 150
     };
     return (
+      <div>
         <div id="ColorScale" className="cls mr"> 
           <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.props.r1} bgGreen={this.props.g1} bgBlue={this.props.b1} /></div>
-          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.redScale.step1} bgGreen={this.greenScale.step1} bgBlue={this.blueScale.step1} /></div>
-          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.redScale.step2} bgGreen={this.greenScale.step2} bgBlue={this.blueScale.step2} /></div>
-          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.redScale.step3} bgGreen={this.greenScale.step3} bgBlue={this.blueScale.step3} /></div>
+          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[1].r} bgGreen={this.colorArray[1].g} bgBlue={this.colorArray[1].b} /></div>
+          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[2].r} bgGreen={this.colorArray[2].g} bgBlue={this.colorArray[2].b} /></div>
+          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[3].r} bgGreen={this.colorArray[3].g} bgBlue={this.colorArray[3].b} /></div>
           <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.props.r2} bgGreen={this.props.g2} bgBlue={this.props.b2} /></div>
-
         </div>
+
+        <div className="cls mr">
+          {this.componentsArray}
+        </div>
+      </div>
     );
   }
 
@@ -73,6 +89,8 @@ class ColorScale extends React.Component{
     this.blueScale = this.channelScaler(startColor.b, endColor.b);
 
   }
+
+ 
 
   channelScaler (c1, c2) {
     //var range = Math.abs(c1 - c2);
@@ -98,6 +116,59 @@ class ColorScale extends React.Component{
       }
     }
     
+  }
+ 
+  colorArrayScaler (startColor,endColor, steps) {
+    var fullArray = [];
+    this.redArray = this.channelArrayScaler(startColor.r,endColor.r, steps);
+    this.blueArray = this.channelArrayScaler(startColor.b,endColor.b, steps);
+    this.greenArray = this.channelArrayScaler(startColor.g,endColor.g, steps);
+
+    for (var i=0;i<steps;i++)
+    {
+      var fullColor = {
+        r: this.redArray[i],
+        g: this.greenArray[i],
+        b: this.blueArray[i]
+      }
+      fullArray.push(fullColor);
+    }
+    return fullArray;
+  }
+
+  channelArrayScaler (c1,c2, steps) {
+    var scaleArray = [];
+    if(c1<c2){
+      this.increment = Math.floor((c2-c1)/steps);
+      for (var i=0;i<steps;i++)
+      {
+        scaleArray[i] = +c1 + (+this.increment * i);
+      }
+    }
+    else{
+      this.increment = Math.floor((c1-c2)/steps);
+      for (var i=0;i<steps;i++)
+      {
+        scaleArray[i] = +c1 - (+this.increment * i);
+      }
+    }
+    return scaleArray;
+  }
+
+  scaleBuilder () {
+    //this.componentsArray = this.colorArray.map(function (i){
+    //  return(
+    //      <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[i].r} bgGreen={this.colorArray[i].g} bgBlue={this.colorArray[i].b} /></div>
+    //    );
+    //})
+    //this.componentsArray = [];
+    //for (var i in this.colorArray)
+    //{
+    //  if (i!=0)
+    //  {
+    //    this.componentsArray.push(<div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[i].r} bgGreen={this.colorArray[i].g} bgBlue={this.colorArray[i].b} /></div>)
+    //  }
+    //}
   }
 }
 
