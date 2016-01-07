@@ -33,3 +33,28 @@ body {
 .w10 {
 	width: 10%
 }
+
+.caps {
+	text-transform: uppercase;
+}
+
+.mainColor {
+	height: 60vh;
+}
+
+.scaleColor {
+	height: 15vh;
+}
+
+.centeredBox {
+	position: relative;
+}
+
+.centeredBox span {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%,-50%)
+}
