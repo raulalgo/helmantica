@@ -2,7 +2,8 @@ body {
   font-family: Helvetica, sans-serif;
   color: $font-color--dark;
   background-color: $background--light;
-  padding: $half-space;
+  margin: 0;
+  //padding: $half-space;
 }
 
 .left {
@@ -19,4 +20,16 @@ body {
 
 .cls {
 	clear: both;
+}
+
+.halfWidth {
+	width: 50%;
+}
+
+.ColorScale {
+	width: 100%;
+}
+
+.w10 {
+	width: 10%
 }

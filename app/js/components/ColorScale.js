@@ -65,17 +65,17 @@ class ColorScale extends React.Component{
     };
     return (
       <div>
-        <div id="ColorScale" className="cls mr"> 
-          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.props.r1} bgGreen={this.props.g1} bgBlue={this.props.b1} /></div>
-          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[1].r} bgGreen={this.colorArray[1].g} bgBlue={this.colorArray[1].b} /></div>
-          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[2].r} bgGreen={this.colorArray[2].g} bgBlue={this.colorArray[2].b} /></div>
-          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[3].r} bgGreen={this.colorArray[3].g} bgBlue={this.colorArray[3].b} /></div>
-          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[4].r} bgGreen={this.colorArray[4].g} bgBlue={this.colorArray[4].b} /></div>
-          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[5].r} bgGreen={this.colorArray[5].g} bgBlue={this.colorArray[5].b} /></div>
-          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[6].r} bgGreen={this.colorArray[6].g} bgBlue={this.colorArray[6].b} /></div>
-          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[7].r} bgGreen={this.colorArray[7].g} bgBlue={this.colorArray[7].b} /></div>
-          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.colorArray[8].r} bgGreen={this.colorArray[8].g} bgBlue={this.colorArray[8].b} /></div>
-          <div className="inline-block"><ColorDisplay ref="displayer" bgRed={this.props.r2} bgGreen={this.props.g2} bgBlue={this.props.b2} /></div>
+        <div id="" className="cls mr ColorScale"> 
+          <div className="inline-block w10"><ColorDisplay ref="displayer" bgRed={this.props.r1} bgGreen={this.props.g1} bgBlue={this.props.b1} /></div>
+          <div className="inline-block w10"><ColorDisplay ref="displayer" bgRed={this.colorArray[1].r} bgGreen={this.colorArray[1].g} bgBlue={this.colorArray[1].b} /></div>
+          <div className="inline-block w10"><ColorDisplay ref="displayer" bgRed={this.colorArray[2].r} bgGreen={this.colorArray[2].g} bgBlue={this.colorArray[2].b} /></div>
+          <div className="inline-block w10"><ColorDisplay ref="displayer" bgRed={this.colorArray[3].r} bgGreen={this.colorArray[3].g} bgBlue={this.colorArray[3].b} /></div>
+          <div className="inline-block w10"><ColorDisplay ref="displayer" bgRed={this.colorArray[4].r} bgGreen={this.colorArray[4].g} bgBlue={this.colorArray[4].b} /></div>
+          <div className="inline-block w10"><ColorDisplay ref="displayer" bgRed={this.colorArray[5].r} bgGreen={this.colorArray[5].g} bgBlue={this.colorArray[5].b} /></div>
+          <div className="inline-block w10"><ColorDisplay ref="displayer" bgRed={this.colorArray[6].r} bgGreen={this.colorArray[6].g} bgBlue={this.colorArray[6].b} /></div>
+          <div className="inline-block w10"><ColorDisplay ref="displayer" bgRed={this.colorArray[7].r} bgGreen={this.colorArray[7].g} bgBlue={this.colorArray[7].b} /></div>
+          <div className="inline-block w10"><ColorDisplay ref="displayer" bgRed={this.colorArray[8].r} bgGreen={this.colorArray[8].g} bgBlue={this.colorArray[8].b} /></div>
+          <div className="inline-block w10"><ColorDisplay ref="displayer" bgRed={this.props.r2} bgGreen={this.props.g2} bgBlue={this.props.b2} /></div>
         </div>
 
         <div className="cls mr">
