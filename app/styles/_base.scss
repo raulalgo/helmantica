@@ -3,7 +3,7 @@ body {
   font-family: Helvetica, sans-serif;
   color: $font-color--dark;
   background-color: $background--light;
-  margin: 0;
+  margin: 25px 50px 50px 50px;
   //padding: $half-space;
 }
 
@@ -40,7 +40,7 @@ body {
 }
 
 .mainColor {
-	height: 60vh;
+	height: 50vh;
 }
 
 .scaleColor {
@@ -58,4 +58,18 @@ body {
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%,-50%)
+}
+
+.third {
+	display: inline-block;
+	width: 33%;
+}
+
+.pickerWrapper {
+	min-height: 30px;
+	padding: 8px 24px;
+}
+
+.colorPicker {
+	margin-bottom: 12px;
 }
