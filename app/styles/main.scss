@@ -4,3 +4,21 @@
 
 @import 'elements/header';
 @import 'elements/footer';
+
+@font-face {
+    font-family: 'franklin_gothic_fsbook_italic';
+    src: url('../fonts/franklingothic-bookit-webfont.eot');
+    src: url('../fonts/franklingothic-bookit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/franklingothic-bookit-webfont.woff2') format('woff2'),
+         url('../fonts/franklingothic-bookit-webfont.woff') format('woff'),
+         url('../fonts/franklingothic-bookit-webfont.ttf') format('truetype'),
+         url('../fonts/franklingothic-bookit-webfont.svg#franklin_gothic_fsbook_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+header {
+	font-family: 'franklin_gothic_fsbook_italic', Helvetica;
+}
+
