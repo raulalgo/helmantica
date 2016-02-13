@@ -12,7 +12,7 @@ class Header extends React.Component {
     return (
       <header>
 
-        Scala
+        sklr
 
       </header>
     );
