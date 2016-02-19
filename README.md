@@ -10,6 +10,7 @@ It is based on the [React Rocket Bolierplate](https://github.com/jakemmarsh/reac
 ### Getting up and running
 
 This is as specified for [React Rocket](https://github.com/jakemmarsh/react-rocket-boilerplate)
+
 1. Clone this repo from `https://github.com/raulalgo/scales-react.git`
 2. Run `npm install` from the root directory
 3. Run `gulp dev` (may require installing Gulp globally `npm install gulp -g`)
