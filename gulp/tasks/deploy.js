@@ -11,5 +11,5 @@ gulp.task('deploy', ['prod'], function(cb) {
 
   global.isProd = true;
 
-  runSequence(['sass', 'imagemin', 'browserify', 'copyFonts', 'copyIndex', 'copyIcons', 'watch'], cb);
+  runSequence(['sass', 'imagemin', 'browserify', 'copyFonts', 'copyIndex', 'copyIcons', 'serve'], cb);
 });
