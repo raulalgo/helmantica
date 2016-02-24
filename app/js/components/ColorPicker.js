@@ -29,9 +29,9 @@ class ColorPicker extends React.Component{
     return (
         <div id="" className="left halfWidth colorPicker"> 
           <div className="pickerWrapper">
-            <div className="third" >R:<input type="range" name="red" min="0" max="255" step="1" defaultValue={this.props.r} onChange={this.handleChange} /> {this.props.r}<br /></div>
-            <div className="third" >G:<input type="range" name="green" min="0" max="255" step="1" defaultValue={this.props.g} onChange={this.handleChange} /> {this.props.g}<br /></div>
-            <div className="third" >B:<input type="range" name="blue" min="0" max="255" step="1" defaultValue={this.props.b} onChange={this.handleChange} /> {this.props.b}<br /></div>
+            <div className="third" >R: {this.props.r}<br /><input type="range" name="red" min="0" max="255" step="1" defaultValue={this.props.r} onChange={this.handleChange} /> </div>
+            <div className="third" >G: {this.props.g}<br /><input type="range" name="green" min="0" max="255" step="1" defaultValue={this.props.g} onChange={this.handleChange} /> </div>
+            <div className="third" >B: {this.props.b}<br /><input type="range" name="blue" min="0" max="255" step="1" defaultValue={this.props.b} onChange={this.handleChange} /> </div>
           </div>
           <ColorDisplay ref="displayer" bgRed={this.props.r} bgGreen={this.props.g} bgBlue={this.props.b} cdClass="mainColor centeredBox" />
         </div>
