@@ -30,7 +30,7 @@ body {
   font-family: Helvetica, sans-serif;
   color: #333;
   background-color: #eee;
-  margin: 25px 50px 50px 50px; }
+  margin: 1vh 2vw 2vh 2vw; }
 
 /* line 10, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 .left {
@@ -73,10 +73,19 @@ body {
   height: 15vh; }
 
 /* line 50, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.scaleColor span.colorLabel {
+  font-size: .7em; }
+
+@media only screen and (min-width: 768px) {
+  /* line 55, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+  .scaleColor span.colorLabel {
+    font-size: 1em; } }
+
+/* line 61, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 .centeredBox {
   position: relative; }
 
-/* line 54, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 65, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 .centeredBox span {
   margin: 0;
   position: absolute;
@@ -87,33 +96,33 @@ body {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
-/* line 63, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 74, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 .third {
   display: inline-block;
   width: 25%;
   padding: 0 2%; }
 
-/* line 69, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 80, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 .pickerWrapper {
   min-height: 30px;
   padding: 8px 24px; }
 
-/* line 74, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 85, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 .colorPicker {
   margin-bottom: 12px; }
 
 /* Reseting appearance of input type range */
-/* line 82, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 93, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range] {
   -webkit-appearance: none;
   width: 100%;
   background: #eee; }
 
-/* line 92, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 103, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range]:focus {
   outline: none; }
 
-/* line 96, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 107, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range]::-ms-track {
   width: 100%;
   cursor: pointer;
@@ -123,7 +132,7 @@ input[type=range]::-ms-track {
 
 /* Styling the thumb */
 /* Special styling for WebKit/Blink */
-/* line 106, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 117, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: 1px solid #000000;
@@ -136,7 +145,7 @@ input[type=range]::-webkit-slider-thumb {
   /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */ }
 
 /* All the same stuff for Firefox */
-/* line 118, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 129, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range]::-moz-range-thumb {
   border: 1px solid #000000;
   height: 16px;
@@ -146,7 +155,7 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer; }
 
 /* All the same stuff for IE */
-/* line 128, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 139, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range]::-ms-thumb {
   border: 1px solid #000000;
   height: 16px;
@@ -156,7 +165,7 @@ input[type=range]::-ms-thumb {
   cursor: pointer; }
 
 /* Styling the track */
-/* line 140, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 151, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 20px;
@@ -164,11 +173,11 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 10px;
   border: 1px solid #010101; }
 
-/* line 149, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 160, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #367ebd; }
 
-/* line 153, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 164, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 20px;
@@ -177,7 +186,7 @@ input[type=range]::-moz-range-track {
   border-radius: 10px;
   border: 1px solid #010101; }
 
-/* line 162, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 173, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range]::-ms-track {
   width: 100%;
   height: 20px;
@@ -187,38 +196,46 @@ input[type=range]::-ms-track {
   border-width: 1px;
   color: transparent; }
 
-/* line 171, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 182, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range]::-ms-fill-lower {
   background: #2a6495;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
 
-/* line 177, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 188, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range]:focus::-ms-fill-lower {
   background: #3071a9; }
 
-/* line 180, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 191, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range]::-ms-fill-upper {
   background: #3071a9;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
 
-/* line 186, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+/* line 197, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 input[type=range]:focus::-ms-fill-upper {
   background: #367ebd; }
 
 /* line 1, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/elements/_header.scss */
 header {
-  height: 50px;
+  height: 6vh;
   background: #eeeeee;
   font-weight: bold;
-  font-size: 48px;
-  padding: 24px 0;
-  letter-spacing: -3px;
+  font-size: 1.4em;
+  padding: 1vh 0;
+  letter-spacing: -0.06em;
   text-transform: lowercase;
   font-family: 'franklin_gothic_fsbook_italic'; }
+
+@media only screen and (min-width: 768px) {
+  /* line 13, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/elements/_header.scss */
+  header {
+    height: 6vh;
+    font-size: 2.5em;
+    padding: 2vh 0;
+    letter-spacing: -3px; } }
 
 /* line 1, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/elements/_footer.scss */
 footer {

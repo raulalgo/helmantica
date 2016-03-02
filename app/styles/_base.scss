@@ -3,7 +3,7 @@ body {
   font-family: Helvetica, sans-serif;
   color: $font-color--dark;
   background-color: $background--light;
-  margin: 25px 50px 50px 50px;
+  margin: 1vh 2vw 2vh 2vw;
   //padding: $half-space;
 }
 
@@ -46,6 +46,17 @@ body {
 .scaleColor {
 	height: 15vh;
 }
+
+.scaleColor span.colorLabel {
+  font-size: .7em
+}
+
+@media only screen and (min-width: 768px) {
+    .scaleColor span.colorLabel {
+      font-size: 1em
+    }
+}
+
 
 .centeredBox {
 	position: relative;

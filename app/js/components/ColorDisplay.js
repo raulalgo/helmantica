@@ -6,8 +6,7 @@ import React from 'react';
 
 var divStyle = {
   backgroundColor: 'rgb(255,255,0)',
-  minWidth: '100%',
-  fontSize: '12px'
+  minWidth: '100%'
 }
 
 class ColorDisplay extends React.Component{
@@ -26,7 +25,7 @@ class ColorDisplay extends React.Component{
 
     divStyle.backgroundColor = "rgb(" + this.props.bgRed + "," + this.props.bgGreen + "," + this.props.bgBlue +  ")" ;
     return (
-      <div id="colorDisplay" className={this.props.cdClass} style={divStyle} ><span className="caps heading -medium">{htmlColor}</span></div>
+      <div id="colorDisplay" className={this.props.cdClass} style={divStyle} ><span className="colorLabel caps">{htmlColor}</span></div>
     );
   }
 
