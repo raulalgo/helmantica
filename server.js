@@ -1,15 +1,16 @@
+process.env.NODE_ENV = 'production';
+
 var path = require('path');
-var http = require('http');
 var express = require('express');
 var PORT = process.env.PORT || 8080;
 
 var app = express();
-var httpServer = http.Server(app);
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, '/build')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '~/build/index.html')
+  response.render(__dirname + '~/build/index.html')
 });
 
 app.listen(PORT, function() {
