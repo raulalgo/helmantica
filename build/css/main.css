@@ -1,0 +1,240 @@
+/* line 1, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_typography.scss */
+p {
+  margin-bottom: 1em; }
+
+/* line 5, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_typography.scss */
+.heading {
+  margin-bottom: 0.618em; }
+  /* line 8, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_typography.scss */
+  .heading.-large, h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px; }
+  /* line 14, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_typography.scss */
+  .heading.-medium, h2 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px; }
+  /* line 20, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_typography.scss */
+  .heading.-small, h3 {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 13.33333px; }
+  /* line 26, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_typography.scss */
+  .heading.-smallest {
+    font-size: 10px;
+    font-weight: bold; }
+
+/* line 2, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+body {
+  font-family: Helvetica, sans-serif;
+  color: #333;
+  background-color: #eee;
+  margin: 25px 50px 50px 50px; }
+
+/* line 10, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.left {
+  float: left; }
+
+/* line 14, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.inline-block {
+  display: inline-block; }
+
+/* line 18, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.mr {
+  margin-right: 25px; }
+
+/* line 22, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.cls {
+  clear: both; }
+
+/* line 26, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.halfWidth {
+  width: 50%; }
+
+/* line 30, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.ColorScale {
+  width: 100%; }
+
+/* line 34, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.w10 {
+  width: 10%; }
+
+/* line 38, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.caps {
+  text-transform: uppercase; }
+
+/* line 42, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.mainColor {
+  height: 50vh; }
+
+/* line 46, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.scaleColor {
+  height: 15vh; }
+
+/* line 50, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.centeredBox {
+  position: relative; }
+
+/* line 54, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.centeredBox span {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+/* line 63, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.third {
+  display: inline-block;
+  width: 25%;
+  padding: 0 2%; }
+
+/* line 69, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.pickerWrapper {
+  min-height: 30px;
+  padding: 8px 24px; }
+
+/* line 74, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.colorPicker {
+  margin-bottom: 12px; }
+
+/* Reseting appearance of input type range */
+/* line 82, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: #eee; }
+
+/* line 92, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range]:focus {
+  outline: none; }
+
+/* line 96, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent; }
+
+/* Styling the thumb */
+/* Special styling for WebKit/Blink */
+/* line 106, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background: #000000;
+  cursor: pointer;
+  margin-top: 1px;
+  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */ }
+
+/* All the same stuff for Firefox */
+/* line 118, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range]::-moz-range-thumb {
+  border: 1px solid #000000;
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background: #000000;
+  cursor: pointer; }
+
+/* All the same stuff for IE */
+/* line 128, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range]::-ms-thumb {
+  border: 1px solid #000000;
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background: #000000;
+  cursor: pointer; }
+
+/* Styling the track */
+/* line 140, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #010101; }
+
+/* line 149, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd; }
+
+/* line 153, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #010101; }
+
+/* line 162, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 20px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 1px;
+  color: transparent; }
+
+/* line 171, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+
+/* line 177, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9; }
+
+/* line 180, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+
+/* line 186, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd; }
+
+/* line 1, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/elements/_header.scss */
+header {
+  height: 50px;
+  background: #eeeeee;
+  font-weight: bold;
+  font-size: 48px;
+  padding: 24px 0;
+  letter-spacing: -3px;
+  text-transform: lowercase;
+  font-family: 'franklin_gothic_fsbook_italic'; }
+
+/* line 1, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/elements/_footer.scss */
+footer {
+  height: 50px;
+  background: #eeeeee;
+  padding: 24px 0; }
+
+@font-face {
+  font-family: 'franklin_gothic_fsdemi';
+  src: url("../fonts/franklingothic-demi-webfont.eot");
+  src: url("../fonts/franklingothic-demi-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/franklingothic-demi-webfont.woff2") format("woff2"), url("../fonts/franklingothic-demi-webfont.woff") format("woff"), url("../fonts/franklingothic-demi-webfont.ttf") format("truetype"), url("../fonts/franklingothic-demi-webfont.svg#franklin_gothic_fsdemi") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 22, stdin */
+header {
+  font-family: 'franklin_gothic_fsdemi', Helvetica; }
+
+/*# sourceMappingURL=sass */
