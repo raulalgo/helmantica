@@ -32,7 +32,7 @@ class HomePage extends React.Component {
 
   render() {
     return (
-      <DocumentTitle title="Home">
+      <DocumentTitle title="Helmantica">
         <section className="home-page cls">
             <ColorPicker name="uno" r={this.state.r1} g={this.state.g1} b={this.state.b1} onUserInput={this.handleChange} />
             <ColorPicker name="dos" r={this.state.r2} g={this.state.g2} b={this.state.b2} onUserInput={this.handleChange} />
