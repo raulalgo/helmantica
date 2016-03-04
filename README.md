@@ -1,4 +1,4 @@
-scales-react
+Helmantica
 ============
 
 The purpose of this project is creating a simple tool that generates a 10 color scale between two given colors.
