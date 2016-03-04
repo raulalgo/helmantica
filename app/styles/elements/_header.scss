@@ -1,10 +1,20 @@
 header {
-  height: 50px;
-  background: #eeeeee;
-  font-weight: bold;
-  font-size: 48px;
-  padding: 24px 0;
-  letter-spacing: -3px;
-  text-transform: lowercase;
-  font-family: 'franklin_gothic_fsbook_italic';
+	height: 6vh;
+	background: #eeeeee;
+	font-weight: bold;
+	font-size: 1.4em;
+	padding: 1vh 0;
+	letter-spacing: -0.06em;
+	text-transform: lowercase;
+	font-family: 'franklin_gothic_fsbook_italic';
+	
+
+}
+@media only screen and (min-width: 768px) {
+	header {
+	  height: 6vh;
+	  font-size: 2.5em;
+	  padding: 2vh 0;
+	  letter-spacing: -3px;
+	}
 }

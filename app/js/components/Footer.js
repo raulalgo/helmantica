@@ -12,7 +12,9 @@ class Footer extends React.Component{
     return (
       <footer className="cls">
 
-        Footer by raulalgo
+        <div className="footerLeft">Designed and coded by <a href="http://raulalgo.es">raulalgo</a>. Check the project on <a href="https://github.com/raulalgo/scales-react">GitHub</a></div>
+        <div className="footerRight">Visit <a href="https://www.google.co.uk/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#safe=off&q=salamanca">Helmantica</a> for happiness</div>
+        <div className="clear">&nbsp;</div>
 
       </footer>
     );
