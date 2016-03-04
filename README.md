@@ -5,6 +5,12 @@ The purpose of this project is creating a simple tool that generates a 10 color 
 
 It is based on the [React Rocket Bolierplate](https://github.com/jakemmarsh/react-rocket-boilerplate)
 
+### Try it
+
+![Helmantica, a scales generator app](https://raw.githubusercontent.com/raulalgo/scales-react/master/assets/helmantica.png)
+
+Try [Helmantica](http://helmantica.herokuapp.com) for a live version of this project.
+
 ---
 
 ### Getting up and running
