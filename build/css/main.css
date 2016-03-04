@@ -84,7 +84,6 @@ body {
   left: 50%;
   margin-right: -50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
 /* line 63, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
