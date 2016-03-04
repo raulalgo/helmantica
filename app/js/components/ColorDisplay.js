@@ -17,21 +17,9 @@ class ColorDisplay extends React.Component{
   constructor(props) {
     super(props);
 
-    var colors = {
-      red: 'red',
-      blue: 'blue',
-      green: 'green'
-    };
+   
 
-    var options = {
-      compact: true,
-      threshold: 0
-    }
-
-    var result = Colorable(colors, options);
-    alert(result[0].name);
-
-    ;
+    
   }
 
   defaultState () {
@@ -45,6 +33,24 @@ class ColorDisplay extends React.Component{
     
 
     divStyle.backgroundColor = "rgb(" + this.props.bgRed + "," + this.props.bgGreen + "," + this.props.bgBlue +  ")" ;
+
+    var colors = {
+      background: htmlColor,
+      black: '#000000',
+      white: '#FFFFFF'
+    }
+    
+    var options = {
+      compact: true,
+      threshold: 0
+    };
+    
+    var result = Colorable(colors, options);
+    if (result[0].combinations[0].contrast<4)
+        textClass = "lightText"
+    else
+        textClass = "darkText"
+   
     return (
       <div id="colorDisplay" className={this.props.cdClass} style={divStyle} ><span className={textClass}>{htmlColor}</span></div>
     );

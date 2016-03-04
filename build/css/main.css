@@ -73,12 +73,12 @@ body {
   height: 15vh; }
 
 /* line 50, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
-.scaleColor span.colorLabel {
+.scaleColor span {
   font-size: .7em; }
 
 @media only screen and (min-width: 768px) {
   /* line 55, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
-  .scaleColor span.colorLabel {
+  .scaleColor span {
     font-size: 1em; } }
 
 /* line 61, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
@@ -233,6 +233,18 @@ footer div {
 /* line 214, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
 .footerRight {
   text-align: right; }
+
+/* line 218, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.lightText {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #FFFFFF; }
+
+/* line 224, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/_base.scss */
+.darkText {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000000; }
 
 /* line 1, /Users/raula/Creative Cloud Files/00 personal/react-rocket/app/styles/elements/_header.scss */
 header {

@@ -47,12 +47,12 @@ body {
 	height: 15vh;
 }
 
-.scaleColor span.colorLabel {
+.scaleColor span {
   font-size: .7em
 }
 
 @media only screen and (min-width: 768px) {
-    .scaleColor span.colorLabel {
+    .scaleColor span {
       font-size: 1em
     }
 }
@@ -213,4 +213,16 @@ footer div {
 
 .footerRight {
   text-align: right;
+}
+
+.lightText {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+}
+
+.darkText {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #000000;
 }
