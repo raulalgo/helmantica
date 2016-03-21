@@ -1,11 +1,13 @@
 'use strict';
 
 import React from 'react';
+var LinkedStateMixin = require('react-addons-linked-state-mixin');
 
 
-class ColorDisplay extends React.Component{
+class Tuner extends React.Component{
 	valueField
 	valueRange
+
 
   constructor(props) {
     super(props);
@@ -17,11 +19,19 @@ class ColorDisplay extends React.Component{
   	this.valueRange = this.props.defaultValue
   }
 
+  setInitialState() {
+    return {message: 13};
+  }
+
   render() {
+    var valueLink = {
+      value: this.state.message,
+      requestChange: this.handleChange
+    };
     return (
     	<div>
 			<input type="range" name={this.props.name} min="0" max="255" defaultValue={this.valueRange} step="1" onChange={this.handleChangeRange} />
-			<input type="field" defaultValue={this.valueField} onChange={this.handleChangeField} />
+			<input type="text" valueLink={this.linkState('message')} onChange={this.handleChangeField} />
 		</div>
     );
   }
@@ -29,6 +39,8 @@ class ColorDisplay extends React.Component{
   handleChange(event) {
     //alert("hey")
     //alert("name: " + this.props.name + "; value: " + event.target.value)
+    this.setState({message: event.target.value});
+
   }
 
   handleChangeRange(event) {
@@ -38,4 +50,4 @@ class ColorDisplay extends React.Component{
 
 }
 
-export default ColorDisplay;
+export default Tuner;

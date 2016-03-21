@@ -32,60 +32,60 @@ body {
   background-color: #eee;
   margin: 1vh 2vw 2vh 2vw; }
 
-/* line 10, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 12, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .left {
   float: left; }
 
-/* line 14, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 16, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .inline-block {
   display: inline-block; }
 
-/* line 18, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 20, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .mr {
   margin-right: 25px; }
 
-/* line 22, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 24, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .cls {
   clear: both; }
 
-/* line 26, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 28, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .halfWidth {
   width: 50%; }
 
-/* line 30, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 32, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .ColorScale {
   width: 100%; }
 
-/* line 34, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 36, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .w10 {
   width: 10%; }
 
-/* line 38, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 40, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .caps {
   text-transform: uppercase; }
 
-/* line 42, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 44, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .mainColor {
   height: 50vh; }
 
-/* line 46, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 48, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .scaleColor {
   height: 15vh; }
 
-/* line 50, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 52, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .scaleColor span {
   font-size: .7em; }
 
 @media only screen and (min-width: 768px) {
-  /* line 55, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+  /* line 57, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
   .scaleColor span {
     font-size: 1em; } }
 
-/* line 61, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 63, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .centeredBox {
   position: relative; }
 
-/* line 65, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 67, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .centeredBox span {
   margin: 0;
   position: absolute;
@@ -95,33 +95,33 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
-/* line 74, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 76, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .third {
   display: inline-block;
   width: 25%;
   padding: 0 2%; }
 
-/* line 80, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 82, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .pickerWrapper {
   min-height: 30px;
   padding: 8px 24px; }
 
-/* line 85, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 87, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .colorPicker {
   margin-bottom: 12px; }
 
 /* Reseting appearance of input type range */
-/* line 93, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 95, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range] {
   -webkit-appearance: none;
   width: 100%;
   background: #eee; }
 
-/* line 103, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 105, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range]:focus {
   outline: none; }
 
-/* line 107, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 109, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range]::-ms-track {
   width: 100%;
   cursor: pointer;
@@ -131,7 +131,7 @@ input[type=range]::-ms-track {
 
 /* Styling the thumb */
 /* Special styling for WebKit/Blink */
-/* line 117, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 119, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: 1px solid #000000;
@@ -144,7 +144,7 @@ input[type=range]::-webkit-slider-thumb {
   /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */ }
 
 /* All the same stuff for Firefox */
-/* line 129, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 131, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range]::-moz-range-thumb {
   border: 1px solid #000000;
   height: 16px;
@@ -154,7 +154,7 @@ input[type=range]::-moz-range-thumb {
   cursor: pointer; }
 
 /* All the same stuff for IE */
-/* line 139, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 141, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range]::-ms-thumb {
   border: 1px solid #000000;
   height: 16px;
@@ -164,7 +164,7 @@ input[type=range]::-ms-thumb {
   cursor: pointer; }
 
 /* Styling the track */
-/* line 151, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 153, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 20px;
@@ -172,11 +172,11 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 10px;
   border: 1px solid #010101; }
 
-/* line 160, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 162, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #367ebd; }
 
-/* line 164, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 166, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 20px;
@@ -185,7 +185,7 @@ input[type=range]::-moz-range-track {
   border-radius: 10px;
   border: 1px solid #010101; }
 
-/* line 173, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 175, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range]::-ms-track {
   width: 100%;
   height: 20px;
@@ -195,52 +195,56 @@ input[type=range]::-ms-track {
   border-width: 1px;
   color: transparent; }
 
-/* line 182, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 184, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range]::-ms-fill-lower {
   background: #2a6495;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
 
-/* line 188, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 190, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range]:focus::-ms-fill-lower {
   background: #3071a9; }
 
-/* line 191, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 193, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range]::-ms-fill-upper {
   background: #3071a9;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
 
-/* line 197, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 199, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 input[type=range]:focus::-ms-fill-upper {
   background: #367ebd; }
 
-/* line 201, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 203, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+input[type="text"] {
+  width: 50px; }
+
+/* line 207, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 footer {
   font-size: 0.8em; }
 
-/* line 205, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 211, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 footer div {
   float: left;
   width: 50%; }
 
-/* line 210, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 216, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .footerLeft {
   text-align: left; }
 
-/* line 214, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 220, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .footerRight {
   text-align: right; }
 
-/* line 218, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 224, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .lightText {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #FFFFFF; }
 
-/* line 224, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+/* line 230, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
 .darkText {
   text-transform: uppercase;
   letter-spacing: 0.1em;

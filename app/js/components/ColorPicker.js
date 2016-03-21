@@ -1,8 +1,8 @@
 'use strict';
 
-import React from 'react';
-import ColorDisplay from './ColorDisplay'
-import Tuner from './Tuner'
+import React              from 'react';
+import ColorDisplay       from './ColorDisplay'
+import ColorPickerInput   from './ColorPickerInput'
 
 
 class ColorPicker extends React.Component{
@@ -32,6 +32,9 @@ class ColorPicker extends React.Component{
             <div className="third" >R: {this.props.r}<br /><input type="range" name="red" min="0" max="255" step="1" defaultValue={this.props.r} onChange={this.handleChange} /> </div>
             <div className="third" >G: {this.props.g}<br /><input type="range" name="green" min="0" max="255" step="1" defaultValue={this.props.g} onChange={this.handleChange} /> </div>
             <div className="third" >B: {this.props.b}<br /><input type="range" name="blue" min="0" max="255" step="1" defaultValue={this.props.b} onChange={this.handleChange} /> </div>
+            <ColorPickerInput name="R" starting={this.props.r} />
+            <ColorPickerInput name="G" starting={this.props.g} />
+            <ColorPickerInput name="B" starting={this.props.b} />
           </div>
           <ColorDisplay ref="displayer" bgRed={this.props.r} bgGreen={this.props.g} bgBlue={this.props.b} cdClass="mainColor centeredBox" />
         </div>
