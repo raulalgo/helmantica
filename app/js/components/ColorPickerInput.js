@@ -20,6 +20,8 @@ class colorPickerInput extends React.Component {
 			var setValue = 0;
 		else
 			var setValue = newValue;
+
+		this.props.onUserInput(this.props.name,setValue);
 		this.setState({message: setValue});
 	}
 
@@ -30,7 +32,7 @@ class colorPickerInput extends React.Component {
 		};
 		return (
 			<div className="third">
-				<span>{this.props.name}:</span><input type="text" valueLink={valueLink} /><br />
+				<span>{this.props.label}:</span><input type="text" valueLink={valueLink} /><br />
 				<input type="range" name={this.props.name} min="0" max="255" valueLink={valueLink} />
 			</div> 
 		);

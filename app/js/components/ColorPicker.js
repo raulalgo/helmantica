@@ -10,6 +10,7 @@ class ColorPicker extends React.Component{
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
+    this.handleChangeInput = this.handleChangeInput.bind(this);
   }
 
   componentWillMount () {
@@ -32,9 +33,9 @@ class ColorPicker extends React.Component{
             <div className="third" >R: {this.props.r}<br /><input type="range" name="red" min="0" max="255" step="1" defaultValue={this.props.r} onChange={this.handleChange} /> </div>
             <div className="third" >G: {this.props.g}<br /><input type="range" name="green" min="0" max="255" step="1" defaultValue={this.props.g} onChange={this.handleChange} /> </div>
             <div className="third" >B: {this.props.b}<br /><input type="range" name="blue" min="0" max="255" step="1" defaultValue={this.props.b} onChange={this.handleChange} /> </div>
-            <ColorPickerInput name="R" starting={this.props.r} />
-            <ColorPickerInput name="G" starting={this.props.g} />
-            <ColorPickerInput name="B" starting={this.props.b} />
+            <ColorPickerInput name="red" label="R" starting={this.props.r} onUserInput={this.handleChangeInput} />
+            <ColorPickerInput name="green" label="G" starting={this.props.g} onUserInput={this.handleChangeInput} />
+            <ColorPickerInput name="blue" label="B" starting={this.props.b} onUserInput={this.handleChangeInput} />
           </div>
           <ColorDisplay ref="displayer" bgRed={this.props.r} bgGreen={this.props.g} bgBlue={this.props.b} cdClass="mainColor centeredBox" />
         </div>
@@ -43,6 +44,11 @@ class ColorPicker extends React.Component{
 
   handleChange(event) {
     this.props.onUserInput(this.props.name,event.target.name,event.target.value);
+  }
+
+  handleChangeInput (name,value) {
+    //alert("name: " + this.props.name + " name: " + name + " value: " +value);
+    this.props.onUserInput(this.props.name, name, value);
   }
 
   tunerChange(chanel,value) {

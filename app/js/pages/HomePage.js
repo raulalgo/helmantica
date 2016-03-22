@@ -49,17 +49,17 @@ class HomePage extends React.Component {
         switch (name){
           case 'red':
             this.setState({
-              r1: value
+              r1: +value
             });
           break;
           case 'green':
             this.setState({
-              g1: value
+              g1: +value
             });
           break;
           case 'blue':
             this.setState({
-              b1: value
+              b1: +value
             });
           break;
         }
@@ -68,17 +68,17 @@ class HomePage extends React.Component {
         switch (name){
           case 'red':
             this.setState({
-              r2: value
+              r2: +value
             });
           break;
           case 'green':
             this.setState({
-              g2: value
+              g2: +value
             });
           break;
           case 'blue':
             this.setState({
-              b2: value
+              b2: +value
             });
           break;
         }
