@@ -29,6 +29,7 @@ class ColorPicker extends React.Component{
     };
     return (
         <div id="" className="left halfWidth colorPicker"> 
+          <h1> hola mundo </h1>
           <div className="pickerWrapper">
             <ColorPickerInput name="red" label="R" starting={this.props.r} onUserInput={this.handleChangeInput} />
             <ColorPickerInput name="green" label="G" starting={this.props.g} onUserInput={this.handleChangeInput} />
