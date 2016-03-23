@@ -38,20 +38,21 @@ class ColorScale extends React.Component{
     }
     this.colorScaler(color1,color2);
     this.colorArray = this.colorArrayScaler(color1,color2, this.steps);
-    this.scaleBuilder();
+    //this.scaleBuilder();
 
   }
 
-  componentWillUpdate() {
+  componentWillUpdate(nextProps, nextState) {
+    //alert(nextProps.r1);
     var initialColor = {
-      r: this.props.r1,
-      g: this.props.g1,
-      b: this.props.b1
+      r: nextProps.r1,
+      g: nextProps.g1,
+      b: nextProps.b1
     }
     var finalColor = {
-      r: this.props.r2,
-      g: this.props.g2,
-      b: this.props.b2
+      r: nextProps.r2,
+      g: nextProps.g2,
+      b: nextProps.b2
     }
     this.colorScaler(initialColor,finalColor);
     this.colorArray = this.colorArrayScaler(initialColor,finalColor, this.steps);
