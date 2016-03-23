@@ -14,13 +14,17 @@ class colorPickerInput extends React.Component {
 	}
 
 	handleChange(newValue) {
-		if (newValue > 255)
-			var setValue = 255;
-		else if (newValue < 0)
-			var setValue = 0;
-		else
-			var setValue = newValue;
-
+		if (isNaN(newValue))
+			var setValue = 0
+		else{
+			if (newValue > 255)
+				var setValue = 255;
+			else if (newValue < 0)
+				var setValue = 0;
+			else
+				var setValue = newValue;
+		}
+		
 		this.props.onUserInput(this.props.name,setValue);
 		this.setState({message: setValue});
 	}
