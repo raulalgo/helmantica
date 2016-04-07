@@ -250,6 +250,38 @@ footer div {
   letter-spacing: 0.1em;
   color: #000000; }
 
+/* line 236, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+.inputWrapper {
+  line-height: 44px;
+  height: 44px;
+  border: solid 1px #ccc;
+  border-left: 0px;
+  padding: 0 12px;
+  background: white; }
+
+/* line 245, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+.inputWrapper span {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 44px; }
+
+/* line 251, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+.inputWrapper input[type=text] {
+  text-align: right;
+  float: right;
+  line-height: 42px; }
+
+/* line 257, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+.inputWrapper span, input[type=text] {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  width: 40%; }
+
+/* line 264, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/_base.scss */
+.first {
+  border-left: solid 1px #ccc; }
+
 /* line 1, /Users/raul.gonzalez/Documents/00 personal/helmantica/app/styles/elements/_header.scss */
 header {
   height: 6vh;

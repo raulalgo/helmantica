@@ -35,8 +35,8 @@ class colorPickerInput extends React.Component {
 			requestChange: this.handleChange
 		};
 		return (
-			<div className="third">
-				<span>{this.props.label}:</span><input type="text" valueLink={valueLink} /><br />
+			<div className={this.props.classes} >
+				<span>{this.props.label}</span><input type="text" valueLink={valueLink} /><br />
 				<input type="range" name={this.props.name} min="0" max="255" valueLink={valueLink} />
 			</div> 
 		);

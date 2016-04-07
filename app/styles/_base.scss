@@ -232,3 +232,35 @@ footer div {
   letter-spacing: 0.1em;
   color: #000000;
 }
+
+.inputWrapper {
+  line-height: 44px;
+  height: 44px;
+  border: solid 1px #ccc;
+  border-left: 0px;
+  padding: 0 12px;
+  background: white;
+}
+
+.inputWrapper span {
+  display: inline-block;
+  font-weight: bold;
+  line-height: 44px;
+}
+
+.inputWrapper input[type=text] {
+  text-align: right;
+  float: right;
+  line-height: 42px;
+}
+
+.inputWrapper span,input[type=text] {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  width: 40%;
+}
+
+.first {
+  border-left: solid 1px #ccc;
+}
